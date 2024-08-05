@@ -1,0 +1,18 @@
+.save-button{
+    display: grid;
+    justify-items: center;
+}
+.save{
+    cursor: pointer;
+    border-radius: 20rem;
+    padding: 1rem 2rem;
+    &:hover{
+        animation: contentChange 0.6s ease-in-out;
+    }
+    &:active{
+        background-color: darken($color: white, $amount: 10%);
+    }
+}
+.saveLogo{
+    padding-left: 1rem;
+}

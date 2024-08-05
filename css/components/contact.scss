@@ -1,0 +1,20 @@
+.contact{
+    border-radius: 24px;
+    background-color: black;
+    padding: 1.6rem;
+}
+.contactTitle{
+    color: white;
+}
+.emailTitle{
+    padding-top: 2rem;
+    color: #DDDDDD;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.container__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

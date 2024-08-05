@@ -1,0 +1,95 @@
+.educationBox{
+    border-radius: 24px;
+    background-color: #F0F0F0;
+    padding: 1.6rem;
+}
+.contant__educationBox{
+    padding-top: 1.4rem;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
+    gap: 1.5rem 1.5rem;
+}
+.lastEducetion img{
+    width: 20px;
+    height: 20px;
+}
+.lastEducetion div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastEducetion{
+    background-color: #28D979;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.educetion{
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.contantNameTitle{
+    display: flex;
+    flex-direction: column;
+
+}
+.lastSkils{
+    color: #EBF9F2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-bottom: 1rem;
+}
+.skils{
+    color: #149063;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-bottom: 1rem;
+}
+.lastNameTitle{
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.nameTitle{
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.lastSkoolName{
+    color: #EBF9F2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.skoolName{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.lastDate__education{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-bottom: 1rem;
+}
+.date__education{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-bottom: 1rem;
+}

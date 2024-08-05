@@ -1,13 +1,229 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/savePDF.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tauri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="
+    https://edu.tbank.ru/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>FinTech</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <main id="resume">
+      <section class="profileImage">
+        <div class="container__profileImage">
+          <img class="Image" src="./image/27f8803676f1e5a26c4e31dbaf5cba56.png">
+        </div>
+      </section>
+      <section class="nameBox">
+        <div class="container__nameBox">
+          <p class="hello">Hello &#128075; i'm</p>
+          <div>
+            <p id="name" class="name" contenteditable="true">Karthik SR</p>
+            <p id="post" class="post" contenteditable="true">UX/UI Designer</p>
+          </div>
+        </div>
+      </section> 
+      <section class="languagesBox">
+        <div class="container__languagesBox">
+          <h1>Languages</h1>
+          <div class="Languages">
+            <div class="language">
+              <p id="language1" contenteditable="true">English</p>
+              <div class="languagesBar">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="language">
+              <p id="language2" contenteditable="true">Malayalam</p>
+              <div class="languagesBar">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="language">
+              <p id="language3" contenteditable="true">Hindi</p>
+              <div class="languagesBar">
+                <div class="barHindi"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experienceBox">
+        <div class="container__experienceBox">
+          <h1 class="Experience">Experience</h1>
+          <ul class="jobList">
+            <li class="lastJob">
+              <div class="lastJobTag">
+                <p id="lastDate" class="lastDate" contenteditable="true">Jun. 2023 - Present</p>
+                <div class="tag">
+                  <p class="most_recent">most recent</p>
+                </div>
+              </div>
+              <div class="content__experienceBox">
+                <div class="jobInfo">
+                  <h2 id="lastRoleName" class="lastRoleName" contenteditable="true">Marketing Manager</h2>
+                  <h3 id="lastCompanyName" class="lastCompanyName" contenteditable="true">Pankayam &nbsp;|&nbsp; Full-time</h3>
+                </div>
+                <ul class="featuredPoints">
+                  <li id="lastPoints1" class="lastPoints" contenteditable="true">Strategy development and planning of campaigns that promote the business and generate genuine traffic
+                  </li>
+                  <li id="lastPoints2" class="lastPoints" contenteditable="true">
+                    SEO Content Creation for Blogs, Website, Social media
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="Job">
+              <p id="date1" class="date" contenteditable="true">2017 - Present</p>
+              <div class="content__experienceBox">
+                <div class="jobInfo">
+                  <h2 id="roleName1" class="roleName" contenteditable="true">Graphic / Web designer</h2>
+                  <h3 id="companyName1" class="companyName" contenteditable="true">Freelance</h3>
+                </div>
+                <ul class="featuredPoints">
+                  <li id="points1" class="points" contenteditable="true">Development of internal projects from scratch, product design of brands 
+                  </li>
+                  <li id="points2" class="points" contenteditable="true">
+                    Landing page, webapps and hybrid apps
+                  </li>
+                  <li id="points3" class="points" contenteditable="true">
+                    Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="Job">
+              <p id="date2" class="date" contenteditable="true">Sep. 2021 - Jun. 2023</p>
+              <div class="content__experienceBox">
+                <div class="jobInfo">
+                  <h2 id="roleName2" class="roleName" contenteditable="true">Legal Assistant</h2>
+                  <h3 id="companyName2" class="companyName" contenteditable="true">Law Firm &nbsp;|&nbsp; Intern</h3>
+                </div>
+                <ul class="featuredPoints">
+                  <li id="points4" class="points" contenteditable="true">Provide administrative support to lawyer and enhance office effectiveness
+                  </li>
+                  <li id="points5" class="points" contenteditable="true">
+                    Handle communication with clients, witnesses etc.
+                  </li>
+                  <li id="points6" class="points" contenteditable="true">
+                    repare case briefs and summarize depositions, interrogatories and testimony
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="tools">
+        <div class="container__tools">
+          <h1 class="Tools">Tools</h1>
+          <div class="container__toolsContent">
+            <div class="toolsContent">
+              <div class="toolsTag">
+                <p id="textTag1" class="textTag" contenteditable="true">design</p>
+              </div>
+              <div class="listIcon">
+                <img class="logo" src="./image/logoFigma.svg" alt="logofigma">
+                <img class="logo" src="./image/icon_adobe_photoshop_.svg" alt="logoPhotoShop">
+                <img class="logo" src="./image/icon_adobe_illustrator_.svg" alt="illustrator">
+                <img class="logo" src="./image/icon_adobe_premiere_.svg" alt="premiere">
+                <img class="logo" src="./image/logoNotion.svg" alt="logoNotion">
+                <img class="logo" src="./image/logoMeet.svg" alt="logoMeet">
+              </div>
+          </div>
+          <div class="toolsContent">
+            <div class="toolsTag">
+              <p id="textTag2" class="textTag" contenteditable="true">no-code</p>
+            </div>
+            <div class="listIcon">
+              <img class="logo" src="./image/logoZapìer.svg" alt="logoZapìer">
+              <img class="logo" src="./image/logoWebflow.svg" alt="logoWebflow">
+              <img class="logo" src="./image/logoFramer.svg" alt="logoFramer">
+              <img class="logo" src="./image/logoWordpress.svg" alt="logoWordpress">
+            </div>
+          </div>
+          <div class="toolsContent">
+            <div class="toolsTag">
+              <p id="textTag3" class="textTag" contenteditable="true">artoficial intelligence</p>
+            </div>
+            <div class="listIcon">
+              <img class="logo" src="./image/logoChatGPT.svg" alt="logoChatGPT">
+              <img class="logo" src="./image/logoCopilot.svg" alt="logoCopilot">
+              <img class="logo" src="./image/logoMidjourney.svg" alt="logoMidjourney">
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="educationBox">
+        <div class="container__educationBox">
+          <h1 class="Educetion">Education</h1>
+          <div class="contant__educationBox">
+            <div class="lastEducetion">
+              <div>
+                <p id="lastDate__education" class="lastDate__education" contenteditable="true">2023</p>
+                <img src="./image/Vector.svg" alt="like">
+              </div>
+              <div class="contantNameTitle">
+                <p id="lastNameTitle" class="lastNameTitle" contenteditable="true"> UI/UX</p>
+                <p id="lastSkils" class="lastSkils" contenteditable="true">#UX #UX #research #DesignSystem #Ui#wireframing #figma #Ux</p>
+              </div>
+              <p id="lastSkoolName" class="lastSkoolName" contenteditable="true">Coursera</p>
+            </div>
+            <div class="educetion">
+              <p id="date__education1" class="date__education" contenteditable="true">2017 - 2022</p>
+              <div class="contantNameTitle">
+                <p id="nameTitle1" class="nameTitle" contenteditable="true">Law</p>
+                <p id="skils1" class="skils" contenteditable="true">#law #legalStudies #contracts #internationalLaws</p>
+              </div>
+              <p id="skoolName1" class="skoolName" contenteditable="true">University of Kerala</p>
+            </div>
+            <div class="educetion">
+              <p id="date__education2" class="date__education" contenteditable="true">2017</p>
+              <div class="contantNameTitle">
+                <p id="nameTitle2" class="nameTitle" contenteditable="true">Graphic design</p>
+                <p id="skils2" class="skils" contenteditable="true">#branding #web#illustration #adobe</p>
+              </div>
+              <p id="skoolName2" class="skoolName" contenteditable="true">Coursera</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="interestsBox">
+        <div class="container__interestsBox">
+          <h1 class="Interests">Interests</h1>
+          <div class="content__interestes">
+            <p id="interestTag1" class="interestTag" contenteditable="true">branding</p>
+            <p id="interestTag2" class="interestTag" contenteditable="true">design</p>
+            <p id="interestTag3" class="interestTag" contenteditable="true">photography</p>
+            <p id="interestTag4" class="interestTag" contenteditable="true">artificial intelligence</p>
+            <p id="interestTag5" class="interestTag" contenteditable="true">illustration</p>
+            <p id="interestTag6" class="interestTag" contenteditable="true">typography</p>
+            <p id="interestTag7" class="interestTag" contenteditable="true">social networks</p>
+            <p id="interestTag8" class="interestTag" contenteditable="true">research</p>
+            <p id="interestTag9" class="interestTag" contenteditable="true">dron pilot</p>
+            <p id="interestTag10" class="interestTag" contenteditable="true">games</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container__contact">
+          <h1 id="contactTitle" class="contactTitle" contenteditable="true">Let´s chat! I´m ready to work on excinting projects</h1>
+          <p id="emailTitle" class="emailTitle" contenteditable="true">srkarthik.designscape@gmail.com</p>
+        </div>
+      </section>
+      <section class="save-button">
+        <button class="save" onclick="downloadPDF()">Save in PDF<img class="saveLogo" src="./image/save-svgrepo-com.svg" alt="save"></button>
+      </section>
+    </main>
   </body>
 </html>
+

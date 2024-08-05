@@ -1,0 +1,103 @@
+.experienceBox{
+    border-radius: 24px;
+    background-color: #F0F0F0;
+    padding: 1.6rem;
+}
+.Experience{
+    padding-bottom: 1.4rem;
+}
+ul{
+    padding: 0;
+}
+.lastJob{
+    background-color: #28D979;
+    border-radius: 20px;
+    list-style-type: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Job{
+    list-style-type: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.roleName{
+    font-size: 20px;
+    line-height: 28px;
+}
+.date{
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+.lastDate{
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+.lastRoleName{
+  color: #FFFFFF;
+  line-height: 28px;
+  font-size: 20px;
+}
+.companyName{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3F3D3D;
+}
+.lastCompanyName{
+  color: #EBF9F2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.lastPoints{
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: inside;
+  line-height: 24px;
+}
+.points{
+  font-size: 16px;
+  font-weight: 400;
+  list-style: inside;
+  line-height: 24px;
+}
+.content__experienceBox{
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 425px) {
+  .content__experienceBox{
+  flex-direction: column;
+  }
+  .jobInfo{
+    padding-bottom: 1rem;
+  }
+}
+.featuredPoints{
+  max-width: 65%;
+}
+.tag{
+  background-color: #7E731266;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+.most_recent{
+  color: #DDF163;
+  font-size: 16px;
+  padding: 5px 11px;
+  line-height: 24px;
+}
+.lastJobTag{
+  display: flex;
+  justify-content: space-between;
+}
