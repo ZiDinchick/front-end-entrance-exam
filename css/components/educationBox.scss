@@ -31,15 +31,13 @@
     border-radius: 20px;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-
+    align-self: flex-start;
 }
 
 .contantNameTitle{
     display: flex;
     flex-direction: column;
-
 }
 .lastSkils{
     color: #EBF9F2;

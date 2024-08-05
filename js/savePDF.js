@@ -1,4 +1,4 @@
-async function downloadPDF() {
+export async function downloadPDF() {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
     const resumeElement = document.getElementById('resume');
