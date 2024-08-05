@@ -34,6 +34,18 @@ main{
                    "I I";  
   }
 }
+@media (min-width:2000px) {
+  main{
+    margin: 5rem 25rem;
+    grid-template: ". A B C C ."
+                   ". D D D E ."    
+                   ". D D D E ."    
+                   ". D D D E ."
+                   ". F F G G ."    
+                   ". F F H H ."
+                   ". I I I I .";  
+  }
+}
 @media (max-width: 425px) {
   main{
     margin: 0.5rem 1rem;
