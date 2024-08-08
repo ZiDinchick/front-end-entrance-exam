@@ -53,7 +53,7 @@ Prettier - это инструмент форматирования кода, к
 1. Клонируйте репозиторий:
 
     ```bash
-    git clone <https://github.com/ZiDinchick/front-end-entrance-exam>
+    git clone https://github.com/ZiDinchick/front-end-entrance-exam.git
     ```
 
 2. Установите зависимости:
